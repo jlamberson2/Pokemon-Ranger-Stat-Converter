@@ -1,17 +1,19 @@
-public class StatConvert {
-    int HP;
-    int attack;
-    int defense;
-    int spAttack;
-    int spDefense;
-    int speed;
+import java.util.ArrayList;
 
-    int strength;
-    int dexterity;
-    int constitution;
-    int wisdom;
-    int intelligence;
-    int charisma;
+public class StatConvert {
+    private int HP;
+    private int attack;
+    private int defense;
+    private int spAttack;
+    private int spDefense;
+    private int speed;
+
+    private int strength;
+    private int dexterity;
+    private int constitution;
+    private int wisdom;
+    private int intelligence;
+    private int charisma;
 
     public StatConvert(){
         HP = 0;
@@ -67,4 +69,18 @@ public class StatConvert {
             charisma+= 1;
         }
     }
+
+    public ArrayList getStats(){
+        ArrayList<Integer> stats = new ArrayList<>();
+        stats.add(strength);
+        stats.add(dexterity);
+        stats.add(constitution);
+        stats.add(intelligence);
+        stats.add(wisdom);
+        stats.add(charisma);
+
+        return stats;
+    }
+
+
 }
