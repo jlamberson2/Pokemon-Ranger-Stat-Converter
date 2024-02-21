@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane fx:id="primaryStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokemonController">
+<Pane fx:id="primaryStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokemonController">
    <children>
       <Button fx:id="convertButton" layoutX="335.0" layoutY="432.0" mnemonicParsing="false" onAction="#initalizeConvert" prefHeight="135.0" prefWidth="211.0" text="Convert">
          <font>
@@ -80,5 +79,15 @@
             <Font size="18.0" />
          </font>
       </TextArea>
+      <TextField fx:id="actualHPInput" layoutX="177.0" layoutY="350.0" prefHeight="75.0" prefWidth="149.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label layoutX="177.0" layoutY="315.0" prefHeight="35.0" prefWidth="149.0" text="HP of Mon">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

@@ -31,6 +31,9 @@ public class pokemonController implements Initializable {
     private TextArea output;
 
     @FXML
+    private TextField actualHPInput;
+
+    @FXML
     private TextField spAttackInput;
 
     @FXML
@@ -53,7 +56,11 @@ public class pokemonController implements Initializable {
             stats = new StatConvert(Integer.parseInt(hpInput.getText()), Integer.parseInt(attackInput.getText()), Integer.parseInt(defenseInput.getText()), Integer.parseInt(spAttackInput.getText()), Integer.parseInt(spDefenseInput.getText()), Integer.parseInt(speedInput.getText()));
             ArrayList<Integer> convertedStats = stats.getStats();
 
-            String toPost = "Strength: " + convertedStats.get(0) + "\nDexterity: " + convertedStats.get(1) + "\nConstitution: " + convertedStats.get(2) + "\n" +
+            String toPost =
+                    "Original stats: \nAttack: " + attackInput.getText() + "\nDefense: " + defenseInput.getText() + "\nSpecial Attack: " + spAttackInput.getText() + "\nSpecial Defense: " + spDefenseInput.getText() + "\nHP: " + hpInput.getText() + "\nSpeed: " + speedInput.getText() + "\nActual HP: " + actualHPInput.getText() + "\n\n" +
+//TODO: Finish string
+                    "DnD 5e Stats:\nHP: " + actualHPInput.getText() + "\n" +
+                    "Strength: " + convertedStats.get(0) + "\nDexterity: " + convertedStats.get(1) + "\nConstitution: " + convertedStats.get(2) + "\n" +
                     "Intelligence: " + convertedStats.get(3) + "\nWisdom: " + convertedStats.get(4) + "\nCharisma: " + convertedStats.get(5) + "\n";
 
             output.setText(toPost);
