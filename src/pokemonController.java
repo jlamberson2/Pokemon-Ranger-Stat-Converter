@@ -57,8 +57,10 @@ public class pokemonController implements Initializable {
             ArrayList<Integer> convertedStats = stats.getStats();
 
             String toPost =
+                    //Pokemon stats string
                     "Original stats: \nAttack: " + attackInput.getText() + "\nDefense: " + defenseInput.getText() + "\nSpecial Attack: " + spAttackInput.getText() + "\nSpecial Defense: " + spDefenseInput.getText() + "\nHP: " + hpInput.getText() + "\nSpeed: " + speedInput.getText() + "\nActual HP: " + actualHPInput.getText() + "\n\n" +
-//TODO: Finish string
+
+                    //Dnd stats string
                     "DnD 5e Stats:\nHP: " + actualHPInput.getText() + "\n" +
                     "Strength: " + convertedStats.get(0) + "\nDexterity: " + convertedStats.get(1) + "\nConstitution: " + convertedStats.get(2) + "\n" +
                     "Intelligence: " + convertedStats.get(3) + "\nWisdom: " + convertedStats.get(4) + "\nCharisma: " + convertedStats.get(5) + "\n";
