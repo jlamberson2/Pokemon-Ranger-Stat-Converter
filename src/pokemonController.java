@@ -1,9 +1,16 @@
 import javafx.event.*;
 import javafx.fxml.*;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.*;
 
+import javax.swing.*;
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -26,6 +33,9 @@ public class pokemonController implements Initializable {
 
     @FXML
     private Button resetMainButton;
+
+    @FXML
+    private Button copyButton;
 
     @FXML
     private TextField defenseInput;
@@ -106,6 +116,16 @@ public class pokemonController implements Initializable {
     @FXML
     void resetOutput(ActionEvent event){
         output.setText("");
+    }
+
+    @FXML
+    void copyToClipboard(ActionEvent event){
+        String toCopy = output.getText();
+
+        Clipboard clip = Toolkit.getDefaultToolkit().getSystemClipboard();
+        StringSelection strse1 = new StringSelection(toCopy);
+        clip.setContents(strse1, strse1);
+        JOptionPane.showMessageDialog(null, "Output Copied");
     }
 
 }

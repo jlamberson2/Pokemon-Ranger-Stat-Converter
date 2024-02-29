@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="primaryStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokemonController">
+<Pane fx:id="primaryStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokemonController">
    <children>
-      <Button fx:id="convertButton" layoutX="335.0" layoutY="492.0" mnemonicParsing="false" onAction="#initalizeConvert" prefHeight="75.0" prefWidth="211.0" text="Convert">
+      <Button fx:id="convertButton" layoutX="495.0" layoutY="497.0" mnemonicParsing="false" onAction="#initalizeConvert" prefHeight="75.0" prefWidth="211.0" text="Convert">
          <font>
             <Font size="36.0" />
          </font>
@@ -74,7 +74,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextArea fx:id="output" layoutX="335.0" layoutY="5.0" prefHeight="486.0" prefWidth="211.0">
+      <TextArea fx:id="output" layoutX="495.0" layoutY="11.0" prefHeight="486.0" prefWidth="211.0">
          <font>
             <Font size="18.0" />
          </font>
@@ -89,12 +89,17 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <Button fx:id="resetMainButton" layoutX="181.0" layoutY="508.0" mnemonicParsing="false" onAction="#resetAllFields" prefHeight="35.0" prefWidth="141.0" text="Reset All">
+      <Button fx:id="resetMainButton" layoutX="181.0" layoutY="507.0" mnemonicParsing="false" onAction="#resetAllFields" prefHeight="35.0" prefWidth="141.0" text="Reset All">
          <font>
             <Font size="26.0" />
          </font>
       </Button>
-      <Button fx:id="resetButton" layoutX="181.0" layoutY="440.0" mnemonicParsing="false" onAction="#resetOutput" prefHeight="35.0" prefWidth="141.0" text="Reset">
+      <Button fx:id="resetButton" layoutX="342.0" layoutY="505.0" mnemonicParsing="false" onAction="#resetOutput" prefHeight="35.0" prefWidth="141.0" text="Reset">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="copyButton" layoutX="182.0" layoutY="434.0" mnemonicParsing="false" onAction="#copyToClipboard" prefHeight="59.0" prefWidth="301.0" text="Copy to Clipboard">
          <font>
             <Font size="28.0" />
          </font>
