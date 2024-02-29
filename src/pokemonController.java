@@ -22,6 +22,12 @@ public class pokemonController implements Initializable {
     private Button convertButton;
 
     @FXML
+    private Button resetButton;
+
+    @FXML
+    private Button resetMainButton;
+
+    @FXML
     private TextField defenseInput;
 
     @FXML
@@ -81,6 +87,25 @@ public class pokemonController implements Initializable {
 
             alert.showAndWait();
         }
+    }
+
+    //Used to clear all fields to effectively "reset" the program
+    @FXML
+    void resetAllFields(ActionEvent event) {
+        attackInput.setText("");
+        defenseInput.setText("");
+        spAttackInput.setText("");
+        spDefenseInput.setText("");
+        speedInput.setText("");
+        hpInput.setText("");
+        actualHPInput.setText("");
+        output.setText("");
+    }
+
+    //Used to clear the output field only
+    @FXML
+    void resetOutput(ActionEvent event){
+        output.setText("");
     }
 
 }

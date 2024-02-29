@@ -9,7 +9,7 @@
 
 <Pane fx:id="primaryStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="568.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pokemonController">
    <children>
-      <Button fx:id="convertButton" layoutX="335.0" layoutY="432.0" mnemonicParsing="false" onAction="#initalizeConvert" prefHeight="135.0" prefWidth="211.0" text="Convert">
+      <Button fx:id="convertButton" layoutX="335.0" layoutY="492.0" mnemonicParsing="false" onAction="#initalizeConvert" prefHeight="75.0" prefWidth="211.0" text="Convert">
          <font>
             <Font size="36.0" />
          </font>
@@ -74,7 +74,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextArea fx:id="output" layoutX="335.0" layoutY="47.0" prefHeight="378.0" prefWidth="211.0">
+      <TextArea fx:id="output" layoutX="335.0" layoutY="5.0" prefHeight="486.0" prefWidth="211.0">
          <font>
             <Font size="18.0" />
          </font>
@@ -89,5 +89,15 @@
             <Font size="24.0" />
          </font>
       </Label>
+      <Button fx:id="resetMainButton" layoutX="181.0" layoutY="508.0" mnemonicParsing="false" onAction="#resetAllFields" prefHeight="35.0" prefWidth="141.0" text="Reset All">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+      <Button fx:id="resetButton" layoutX="181.0" layoutY="440.0" mnemonicParsing="false" onAction="#resetOutput" prefHeight="35.0" prefWidth="141.0" text="Reset">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
    </children>
 </Pane>

@@ -16,7 +16,7 @@ public class main extends Application {
             Parent root = FXMLLoader.load(getClass().getResource("pokemonUI.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Endangered Dungeons Pokemon Stat Converter v1.1");
+            primaryStage.setTitle("Endangered Dungeons Pokemon Stat Converter v1.2");
             primaryStage.setResizable(false);
             primaryStage.show();
         } catch (Exception e){
